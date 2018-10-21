@@ -1,0 +1,76 @@
+.principalHeader{
+    height: 60px;
+    background-color: white;
+    color: skyblue; 
+}
+
+.principalHeader-nav{
+    width: 80%;
+    margin: auto;
+}
+
+.principalHeader-list{
+    display: flex; 
+    align-items: center;
+    height: inherit;
+}
+
+.principalHeader-list * {
+    margin-right: 5%;
+    height: inherit;
+}
+
+.principalHeader-menu{
+    display: flex;
+    align-items: center;
+}
+
+.principalHeader-menu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.principalHeader-logo img{
+    width: 50px;
+    height: 35px;
+}
+
+.principalHeader-search{
+    flex-grow: 2;  
+    padding-left: 6%;
+}
+
+.form-search{
+    display: flex;
+    align-items: center;
+}
+
+.form-search input{
+    background-color: #ccc;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-right-width: 0;
+}
+
+.principalHeader-search .search-submit{
+    background-color: deepskyblue;
+    background-size: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+.principalHeader-car{
+    margin-left: auto;
+}
+
+.principalHeader-car img{
+    width: 50px;
+    height: inherit;
+}
+
