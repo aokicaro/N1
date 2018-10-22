@@ -4,13 +4,24 @@
     height: 70%;
 }
 .produto-destaque{
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 0 20% 0 20%;
+}
+.produto-destaque-titulo{
+
 }
 .produto-destaque-list{
     display: flex;
+    justify-content: space-between;
 }
 .produto{
-    background-color: white;    
+    background-color: skyblue;    
+}
+.produto-img{
+    padding: .5em;
+}
+.produto-img img{
+    width: 350px;
+    height: 400px;
 }
 

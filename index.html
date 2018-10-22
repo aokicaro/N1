@@ -9,14 +9,34 @@
     <link rel="stylesheet" href="/style/menu.css">
     <link rel="stylesheet" href="/style/slide.css">
     <link rel="stylesheet" href="/style/portifolio.css">
+    <script type="text/javascript" src="/js/menu.js"></script>
 </head>
 <body>
 	<header class="principalHeader">
 			<nav class="principalHeader-nav">
                 <ul class="principalHeader-list">
-                    <li class="principalHeader-menu">
-                        <img src="/img/menu.png" alt="ícone de menu">
-                        <span class="menu-span">Menu</span>
+                    <li id="principalHeader-menu" class="principalHeader-menu">
+                        <div class="menu-header" onclick="dropDown()">
+                            <img class="menu-img" src="/img/menu.png" alt="ícone de menu">
+                            <span class="menu-span">Menu</span>
+                        </div>
+                        <div id="menu-dropdown" class="dropdown-content">
+                            <table>
+                                <tr>
+                                    <th class="menu-option-dropdown">Loren</th>
+                                    <th class="menu-option-dropdown">Loren</th>
+                                </tr>
+                                <tr>
+                                    <td class="menu-option-dropdown">Loren</td>
+                                    <td class="menu-option-dropdown">Loren</td>
+                                </tr>
+                                <tr>
+                                    <td class="menu-option-dropdown">Loren</td>
+                                    <td class="menu-option-dropdown">Loren</td>
+                                </tr>
+                            </table>
+                            
+                        </div>
                     </li>
                     <li class="principalHeader-logo">
                         <img src="/img/logo.png" alt="Logo N1">
@@ -35,15 +55,15 @@
 	</header>
     <main>
         <div class="slide">
-            <img class="img-scorpion" src="/img/scorpion.jpg" alt="Imagem scorpion mortal kombat">
+            <img class="img-scorpion" src="/img/Scorpion.png" alt="Imagem scorpion mortal kombat">
         </div>
         <div class="portifolio">
             <div class="produto-destaque">
-                <h2>Produtos em destaque</h2>
+                <h2 class="produto-destaque-titulo">Produtos em destaque</h2>
                 <ul class="produto-destaque-list">
                     <li class="produto">
                         <div class="produto-img">
-                            <img src="/img/ryu.jpg" alt="Imagem ryu">
+                            <img class="produto-um" src="/img/ryu.jpg" alt="Imagem ryu">
                         </div>
                         <div class="produto-desc">
                             <div class="produto-nome">
@@ -58,40 +78,38 @@
                     </li>
                     <li class="produto">
                             <div class="produto-img">
-                                <img src="/img/ryu.jpg" alt="Imagem ryu">
+                                <img class="produto-dois" src="/img/Ken.jpg" alt="Imagem Ken">
                             </div>
                             <div class="produto-desc">
                                 <div class="produto-nome">
-                                    <strong>Ryu</strong>
-                                    <span>Vem com haduken</span>        
+                                    <strong>Ken</strong>
+                                    <span>Vem com shoryuken</span>        
                                 </div>
                                 <div class="produto-preco">
                                     <strong>R$</strong>
-                                    <span>37,00</span>
+                                    <span>27,00</span>
                                 </div>
                             </div>
                     </li>
                     <li class="produto">
                             <div class="produto-img">
-                                <img src="/img/ryu.jpg" alt="Imagem ryu">
+                                <img class="produto-tres" src="/img/Akuma.jpg" alt="Imagem ryu">
                             </div>
                             <div class="produto-desc">
                                 <div class="produto-nome">
-                                    <strong>Ryu</strong>
-                                    <span>Vem com haduken</span>        
+                                    <strong>Akuma</strong>
+                                    <span>Especial tela preta</span>        
                                 </div>
                                 <div class="produto-preco">
                                     <strong>R$</strong>
-                                    <span>37,00</span>
+                                    <span>27,00</span>
                                 </div>
                             </div>
                     </li>
                 </ul>
-
             </div>
             <div class="novidade"></div>
         </div>
-        <!-- main aqui -->
     </main>
 </body>
 </html>

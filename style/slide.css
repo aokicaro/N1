@@ -1,7 +1,9 @@
 .slide{
     width: 100%;
+    height: 30%;
+    background-color: black;
 }
 .img-scorpion{
-    width: inherit;
-    height: 600px;
+    height: 100%;
+    width: 100%;
 }

@@ -1,16 +1,17 @@
 .principalHeader{
     height: 60px;
     background-color: white;
-    color: skyblue; 
+    color: rgb(27, 27, 112); 
 }
 
 .principalHeader-nav{
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 0 20% 0 20%;
 }
 
 .principalHeader-list{
     display: flex; 
+    justify-content: space-between;
     align-items: center;
     height: inherit;
 }
@@ -19,18 +20,46 @@
     margin-right: 5%;
     height: inherit;
 }
-
+.principalHeader-list :last-child{
+    margin-right: 0;
+}
+/*---------------- menu-----------------------------  */
 .principalHeader-menu{
+    position: relative;
+}
+.principalHeader-menu .menu-header{
     display: flex;
     align-items: center;
 }
 
-.principalHeader-menu img{
+.principalHeader-menu .menu-header .menu-img{
     width: 30px;
     height: 30px;
     margin-right: 5px;
 }
 
+.dropdown-content{
+    display: none;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    background-color: skyblue;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content th{
+    font-weight: bold;
+    padding: 1em;
+}
+.dropdown-content td{
+    padding: .2em;
+}
+.show{
+    display: block;
+}
+
+/* --------------------------------------------------- */
 .principalHeader-logo img{
     width: 50px;
     height: 35px;
@@ -65,12 +94,14 @@
     width: 40px;
     height: 40px;
 }
-.principalHeader-car{
-    margin-left: auto;
-}
 
 .principalHeader-car img{
     width: 50px;
-    height: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    .principalHeader-search{
+        display: none;
+    }
 }
 
